@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Owen's Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Owen's Registration Form</h2>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <label>First Name</label>
+                <input type="text" id="firstName" placeholder="Owen">
+                <div id="firstNameError" class="error"></div>
+                <label>Last Name</label>
+                <input type="text" id="lastName" placeholder="Campued">
+                <div id="lastNameError" class="error"></div>
+                <label>Email</label>
+                <input type="text" id="email" placeholder="owencampued@gmail.com">
+                <div id="emailError" class="error"></div>
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Must include 8 characters">
+                <div id="passwordError" class="error"></div>
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword">
+                <div id="confirmPasswordError" class="error"></div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
